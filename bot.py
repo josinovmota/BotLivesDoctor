@@ -23,10 +23,10 @@ class Roles(discord.ui.View):
         user = interaction.user
         if role in [y.id for y in user.roles]:
             await user.remove_roles(user.guild.get_role(role))
-            await interaction.response.send_message('Você removeu a Role!', ephemeral = True)
+            await interaction.response.send_message('Você removeu a Role!', ephemeral = True, delete_after = 5.0)
         else:
             await user.add_roles(user.guild.get_role(role))
-            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True)
+            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
     #Front-end
     @discord.ui.button(label = "Front-end", custom_id = "Front-end", style = discord.ButtonStyle.secondary)
     async def button2(self, interaction, button):
@@ -34,10 +34,10 @@ class Roles(discord.ui.View):
         user = interaction.user
         if role in [y.id for y in user.roles]:
             await user.remove_roles(user.guild.get_role(role))
-            await interaction.response.send_message('Você removeu a Role!', ephemeral = True)
+            await interaction.response.send_message('Você removeu a Role!', ephemeral = True, delete_after = 5.0)
         else:
             await user.add_roles(user.guild.get_role(role))
-            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True)
+            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
     #Data
     @discord.ui.button(label = "Data Science", custom_id = "Data Science", style = discord.ButtonStyle.secondary)
     async def button3(self, interaction, button):
@@ -45,10 +45,10 @@ class Roles(discord.ui.View):
         user = interaction.user
         if role in [y.id for y in user.roles]:
             await user.remove_roles(user.guild.get_role(role))
-            await interaction.response.send_message('Você removeu a Role!', ephemeral = True)
+            await interaction.response.send_message('Você removeu a Role!', ephemeral = True, delete_after = 5.0)
         else:
             await user.add_roles(user.guild.get_role(role))
-            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True)
+            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
 
 @bot.command()
 async def roles(ctx):
