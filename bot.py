@@ -82,6 +82,17 @@ class Roles(discord.ui.View):
         else:
             await user.add_roles(user.guild.get_role(role))
             await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
+    #CSharp
+    @discord.ui.button(emoji = '<:csharp:1054049040641298472>' , label = "C#", custom_id = "C#", style = discord.ButtonStyle.secondary)
+    async def button7(self, interaction, button):
+        role = 1054428575220113468
+        user = interaction.user
+        if role in [y.id for y in user.roles]:
+            await user.remove_roles(user.guild.get_role(role))
+            await interaction.response.send_message('Você removeu a Role!', ephemeral = True, delete_after = 5.0)
+        else:
+            await user.add_roles(user.guild.get_role(role))
+            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
 
 @bot.command()
 async def roles(ctx):
