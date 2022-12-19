@@ -60,6 +60,17 @@ class Roles(discord.ui.View):
         else:
             await user.add_roles(user.guild.get_role(role))
             await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
+    #C/C++
+    @discord.ui.button(emoji = '<:cpp:1054473082225573948>' , label = "C/C++", custom_id = "C/C++", style = discord.ButtonStyle.secondary)
+    async def button9(self, interaction, button):
+        role = 1054472343839322122
+        user = interaction.user
+        if role in [y.id for y in user.roles]:
+            await user.remove_roles(user.guild.get_role(role))
+            await interaction.response.send_message('Você removeu a Role!', ephemeral = True, delete_after = 5.0)
+        else:
+            await user.add_roles(user.guild.get_role(role))
+            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
     #Java/JavaScript
     @discord.ui.button(emoji = '<:java11:1053438696571015278>' , label = "Java/JavaScript", custom_id = "Java/JavaScript", style = discord.ButtonStyle.secondary)
     async def button5(self, interaction, button):
@@ -93,6 +104,18 @@ class Roles(discord.ui.View):
         else:
             await user.add_roles(user.guild.get_role(role))
             await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
+    #Html/Css
+    @discord.ui.button(emoji = '<:css:1054471552453849120>' , label = "Html/Css", custom_id = "Html/Css", style = discord.ButtonStyle.secondary)
+    async def button8(self, interaction, button):
+        role = 1054471923339370566
+        user = interaction.user
+        if role in [y.id for y in user.roles]:
+            await user.remove_roles(user.guild.get_role(role))
+            await interaction.response.send_message('Você removeu a Role!', ephemeral = True, delete_after = 5.0)
+        else:
+            await user.add_roles(user.guild.get_role(role))
+            await interaction.response.send_message('Você adicionou a Role!', ephemeral = True, delete_after = 5.0)
+
 
 @bot.command()
 async def roles(ctx):
