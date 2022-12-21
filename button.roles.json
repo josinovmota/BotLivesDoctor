@@ -1,0 +1,55 @@
+{
+  "devRoles": [
+    {
+      "id_role": 992133047954702477,
+      "label": "👩‍💻Back-end",
+      "id_custom": "Back-end"
+    },
+    {
+      "id_role": 992133005000843336,
+      "label": "🧙‍♂️Front-endd",
+      "id_custom": "Front-end"
+    },
+    {
+      "id_role": 992133977882230825,
+      "label": "📈Data Science",
+      "id_custom": "Data Science"
+    },
+    {
+      "id_role": 1053439212814348348,
+      "label": "Python",
+      "emoji": "<:des_python62:1053438694767480903>",
+      "id_custom": "Python"
+    },
+    {
+      "id_role": 1054472343839322122,
+      "label": "C/C++",
+      "emoji": "<:cpp:1054473082225573948>",
+      "id_custom": "C/C++"
+    },
+    {
+      "id_role": 1053439219713982535,
+      "label": "Java/JavaScript",
+      "emoji": "<:java11:1053438696571015278>",
+      "id_custom": "Java/JavaScript"
+    },
+    {
+      "id_role": 1053719075601252503,
+      "label": "TypeScript",
+      "emoji": "<:ts:1053648211719503914>",
+      "id_custom": "TypeScript"
+    },
+    {
+      "id_role": 1054428575220113468,
+      "label": "C#",
+      "emoji": "<:csharp:1054049040641298472>",
+      "id_custom": "C#"
+    },
+    {
+      "id_role": 1054471923339370566,
+      "label": "Html/Css",
+      "emoji": "<:css:1054471552453849120>",
+      "id_custom": "Html/Css"
+    }
+  ]
+}
