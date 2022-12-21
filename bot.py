@@ -41,10 +41,10 @@ async def roles(ctx):
     
     # Create a button for each role
     for role in arrRolesDev:
+        emoji = None
         if "emoji" in role:
-            view.add_item(RoleBtn(emoji=role['emoji'], label=role['label'], custom_id=role['id_custom'], style=discord.ButtonStyle.secondary))
-        else:
-            view.add_item(RoleBtn(label=role['label'], custom_id=role['id_custom'], style=discord.ButtonStyle.secondary))
+            emoji = role['emoji']
+        view.add_item(RoleBtn(emoji=emoji, label=role['label'], custom_id=role['id_custom'], style=discord.ButtonStyle.secondary))
 
     await ctx.send(embed = embed, view = view)
 
