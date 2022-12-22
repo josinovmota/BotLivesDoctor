@@ -1,4 +1,4 @@
 # BotLivesDoctor
 Bot legal e bonito e charmoso
 
-![deployed](https://github.com/HappyHippyHippo/BotLivesDoctor/actions/workflows/deploy.yml/badge.svg)
+![deployed](https://github.com/happyhippyhippo/botlivesdoctor/actions/workflows/deploy.yml/badge.svg)

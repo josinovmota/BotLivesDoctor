@@ -30,7 +30,7 @@ tag="$( git describe --tags )"
 io_success "code version found : $tag\n"
 
 io_info "checking if there is a docker image for the founded tag ...\n"
-if [ "$( docker images | grep botlivesdoctor | grep $tag )" ]
+if [ "$( sudo docker images | grep botlivesdoctor | grep $tag )" ]
 then
     io_success "docker image for current version already founded\n"
     exit 0
