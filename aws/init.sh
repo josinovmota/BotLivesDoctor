@@ -50,3 +50,11 @@ io_info "installing docker compose ...\n"
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.14.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 io_success "docker compose installed\n"
+
+################################################################################
+# Garantee there is the .env file
+################################################################################
+
+io_info "generating the .env file ...\n"
+touch ~/BotLivesDoctor/.env
+io_success ".env file generated\n"
