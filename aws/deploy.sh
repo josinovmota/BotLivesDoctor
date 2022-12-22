@@ -37,7 +37,7 @@ then
 fi
 
 io_info "building docker image ...\n"
-sudo docker build -t botlivesdoctor:$tag ./aws
+sudo docker build -t botlivesdoctor:$tag .
 io_success "docker image builded\n"
 
 ################################################################################
