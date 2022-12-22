@@ -26,13 +26,11 @@ io_success "system updated\n"
 # Docker
 ################################################################################
 
-# uninstall current version of docker
 io_info "removing previous versions of docker ...\n"
 sudo apt-get -yq remove docker docker-engine docker.io containerd runc
 sudo apt-get -yq autoremove
 io_success "old docker version removed\n"
 
-# install docker
 io_info "installing docker ...\n"
 sudo apt-get -yq install ca-certificates curl gnupg lsb-release
 sudo mkdir -p /etc/apt/keyrings 
@@ -43,3 +41,12 @@ echo \
 sudo apt-get update
 sudo apt-get -yq install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 io_success "docker installed\n"
+
+################################################################################
+# Docker Compose
+################################################################################
+
+io_info "installing docker compose ...\n"
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.14.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+io_success "docker compose installed\n"

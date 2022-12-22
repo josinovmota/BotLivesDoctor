@@ -1,0 +1,15 @@
+version: '3'
+
+volumes:
+  datavol:
+    driver: local
+
+services:
+  bot:
+    container_name: bot
+    image: botlivesdoctor:<tag>
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - .env:/usr/app/src/.env
