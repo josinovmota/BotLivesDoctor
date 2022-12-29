@@ -45,7 +45,11 @@ class Roles(discord.ui.View):
     @discord.ui.button(emoji = '<:cpp:1054473082225573948>' , label = "C/C++", custom_id = "C/C++", style = discord.ButtonStyle.secondary)
     async def button9(self, interaction, button):
         await self.apply(interaction, 1054472343839322122)
-    #Java/JavaScript
+    #JavaScript
+    @discord.ui.button(emoji = '<:2057javascriptlogo:1058169986323054732>' , label = "JavaScript", custom_id = "JavaScript", style = discord.ButtonStyle.secondary)
+    async def button9(self, interaction, button):
+        await self.apply(interaction, 1058170293190918214)
+    #Java
     @discord.ui.button(emoji = '<:java11:1053438696571015278>' , label = "Java/JavaScript", custom_id = "Java/JavaScript", style = discord.ButtonStyle.secondary)
     async def button5(self, interaction, button):
         await self.apply(interaction, 1053439219713982535)
